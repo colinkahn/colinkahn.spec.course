@@ -26,12 +26,6 @@ Make use of spec even for functions you didn't write specs for.
 
 ; we can check conformance of our samples
 (sc/explain-sampled-data `called-by-a :ret (s/spec ...)))
-
-; or add a constraint before checking
-(sc/add-contraint `called-by-a :ret (s/spec ...))
-
-; then remove it later
-(sc/remove-constraint `called-by-a :ret)
 ```
 
 ## Additional sample utilities
